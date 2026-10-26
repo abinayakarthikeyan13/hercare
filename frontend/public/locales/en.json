@@ -1,0 +1,16 @@
+{
+  "app_name": "HerCare",
+  "tagline": "Privacy-First AI Menstrual Health Companion",
+  "general_disclaimer": "This is general wellness guidance, not medical advice.",
+  "emergency_warning": "Urgent Medical Alert: Please consult a doctor or call emergency services immediately.",
+  "languages": {
+    "en": "English",
+    "ta": "தமிழ்"
+  },
+  "phases": {
+    "menstrual": "Menstrual Phase",
+    "follicular": "Follicular Phase",
+    "ovulatory": "Ovulatory Phase",
+    "luteal": "Luteal Phase"
+  }
+}

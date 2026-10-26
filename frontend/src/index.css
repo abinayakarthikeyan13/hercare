@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root {
+    height: 100%;
+    height: 100dvh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+
+  body {
+    @apply bg-[#EFEBF9] text-slate-800 transition-colors duration-200;
+  }
+
+  body.dark {
+    @apply bg-slate-950 text-slate-100;
+  }
+}
+
+/* Safe area padding utilities */
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Animations for HerCare AI Companion & Avatar */
+@keyframes breathing {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.025);
+  }
+}
+
+@keyframes avatarGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(236, 72, 153, 0.4), 0 0 30px rgba(168, 85, 247, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(236, 72, 153, 0.7), 0 0 45px rgba(168, 85, 247, 0.5);
+  }
+}
+
+@keyframes rippleWave {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+}
+
+.animate-breathing {
+  animation: breathing 3.5s ease-in-out infinite;
+}
+
+.animate-avatar-glow {
+  animation: avatarGlow 2.5s ease-in-out infinite;
+}
+
+.animate-ripple-wave {
+  animation: rippleWave 1.8s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+/* Independent smooth scrollbars for internal content only */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #E2D9F3;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C4B5FD;
+}
