@@ -1,7 +1,7 @@
 # HerCare 🌸
 
 **Privacy-First, Multilingual, Voice-Enabled AI Menstrual Health Companion**  
-*Hackathon Round 2 Prototype*
+
 
 HerCare empowers women with personalized, culturally sensitive, and clinically safe menstrual health guidance in **Tamil (தமிழ்)** and **English**. Built with a local-first **CIA Triad** (Confidentiality, Integrity, Availability) security architecture, HerCare ensures that intimate health data remains strictly private and protected.
 
